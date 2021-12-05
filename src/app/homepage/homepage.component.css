@@ -45,7 +45,7 @@ h3 {
  }
 
  .box:hover {
-     background-color: #1ddc58;
+     border: 2px solid #1ddc58;
  }
 
  /*responsive cua cai box*/
