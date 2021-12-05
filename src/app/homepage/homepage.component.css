@@ -7,9 +7,9 @@ h3 {
     font-weight: bold;
     width: 100%; 
     text-align: center; 
+    color: #373d4b;
     border-bottom: 1px solid #000; 
     line-height: 0.1em;
-    font-size: 3vw;
  } 
  
  h3 span { 
@@ -31,26 +31,27 @@ h3 {
  }
 
  .box {
-     width: 30%;
+     width: 40%;
      height: 200px;
      box-sizing: border-box;
      margin-bottom: 20px;
      border-radius: 10px;
-     background-color: black;
-     color: white;
+     border: 1px solid LightGray;
+     background-color: white;
+     color: #373d4b;
      text-align: center;
      font-family: Arial, Helvetica, sans-serif;
      font-weight: bold;
  }
 
  .box:hover {
-     background-color: #af1323;
+     background-color: #1ddc58;
  }
 
  /*responsive cua cai box*/
  @media screen and (min-width:1600px) {
     h3 {
-        font-size: 40px;
+        font-size: 30px;
     }
      .box{
         width: 40%;
