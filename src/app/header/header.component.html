@@ -1,16 +1,18 @@
 <body>
-  <div class="container">
-    <header>
-      <nav id="navbar" (scroll)="onScroll()" [ngClass]="navbarfixed?'fixed':'nofixed'">
-        <ul [ngClass]="listfixed?'lifixed':'linofixed'">
-          <li id="logo"><a><img src="assets/imgs/logo.png" width="130px" height="auto"></a></li>
-          <li><a href="">TRANG CHỦ</a></li>
-          <li><a href="">CHO THUÊ</a></li>
-          <li><a href="">TƯ VẤN</a></li>
-        </ul>
-      </nav>  
-    </header>
-  </div>
+  <nav class="navbar">
+    <div class="brand-title"><img src="assets/imgs/logo.png" width="130px" height="auto"></div>
+    <a href="#" class="toggle-button" (click)="toggleNavbar()" [ngClass]="!navbarOpened ? 'menu': 'close'">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div [ngClass]="listmini?'navbar-links':'navbar-linksclose'">
+      <ul>
+        <li><a routerLink="/homepage">TRANG CHỦ</a></li>
+        <li><a href="#">CHO THUÊ</a></li>
+        <li><a href="#">HÌNH ẢNH</a></li>
+        <li><a routerLink="/contact">LIÊN HỆ</a></li>
+      </ul>
+    </div>
+  </nav>
 </body>
-
-

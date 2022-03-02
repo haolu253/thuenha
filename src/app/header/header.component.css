@@ -1,68 +1,170 @@
-body{
-    transition: 0.2s;
+* {
+    box-sizing: border-box;
 }
 
-.fixed{
-    position: fixed;
-    background-color: white;
-    top: 0px;
-    left: 0px;
-    width: 100%;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.nofixed{
-    position: absolute;
-    top: 30px;
-    left: 0px;
-    width: 100%;
-}
-
-nav ul {
+.navbar {
     display: flex;
+    position: relative;
+    justify-content: space-between;
     align-items: center;
-    padding-left: 210px;
-    padding-right: 210px;
-    margin-top: -15px;
-    margin-bottom: -15px;
+    background-color: #d9ebdf;
+    color: black;
+    padding-left: 15vw;
+    padding-right: 15vw;
 }
 
-nav ul li {
-    display: inline-block;
-    list-style-type: none;
+.brand-title {
+    width: 130px;
+    height: auto;
 }
 
-nav ul li:first-child {
-    margin-right: auto;
+.navbar-links {
+    height: 100%;
 }
 
-nav .linofixed li a {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    color: white;
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
     display: block;
-    padding: 20px;
     text-decoration: none;
-    padding-top:5px;
-}
-
-nav .linofixed li a:hover {
-      color:#1ddc58;
-      text-decoration: none;
-}
-
-
-nav .lifixed li a {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    color: black;
+    padding: 1rem;
     font-size: 18px;
-    color: #373d4b;
-    display: block;
-    padding: 20px;
-    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-nav .lifixed li a:hover {
-      color:#1ddc58;
-      text-decoration: none;
+.navbar-links li a:hover {
+    color: #1ddc58;
+    background-color: #373d4b;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #1ddc58;
+    border-radius: 10px;
+}
+
+@media (max-width: 900px) and (min-width:500px) {
+    .brand-title{
+        width: 80px;
+        height: auto;
+        margin-right: 6vw;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-linksclose ul {
+        flex-direction: column;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .navbar-linksclose ul li {
+        text-align: center;
+        margin-right: 4.6vw;
+    }
+
+    .navbar-linksclose li a {
+        display: inline-block;
+        width: 100%;
+        text-decoration: none;
+        color: black;
+        padding: 1.2vw;
+        font-size: 1.5vw;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .navbar-linksclose li a:hover {
+        color: #1ddc58;
+        background-color: #373d4b;
+    }
+}
+
+@media (max-width: 490px) {
+    .brand-title{
+        width: 80px;
+        height: auto;
+        margin-right: 10vw;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-linksclose ul {
+        flex-direction: column;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .navbar-linksclose ul li {
+        text-align: center;
+        margin-right: 7vw;
+    }
+
+    .navbar-linksclose li a {
+        display: inline-block;
+        width: 100%;
+        text-decoration: none;
+        color: black;
+        padding: 1.2vw;
+        font-size: 2.8vw;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .navbar-linksclose li a:hover {
+        color: #1ddc58;
+        background-color: #373d4b;
+    }
+
 }
