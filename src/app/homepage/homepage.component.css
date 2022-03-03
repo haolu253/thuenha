@@ -1,25 +1,45 @@
-body {
+body{
     background-color: #d9ebdf;
 }
 
-#wall {
+#wall{
     width: 100%;
     height: auto;
 }
 
-h3 {
+#secondcontainer{
+    background-color: #373d4b;
+    padding-top: 15vw;
+}
+
+#secondcontainer p{
+    background-color: #373d4b;
+}
+
+
+#secondwall{
+    width: 100%;
+    height: auto;
+    filter: brightness(40%);
+}
+
+.col-6{
+    text-align: center;
+}
+
+h3{
     font-weight: bold;
     width: 100%; 
     text-align: center; 
     color: #373d4b;
  } 
 
- .grid-item0 {
+.grid-item0{
     margin-top: 4vw;
     background-color: #d9ebdf;
 }
 
- .container {
+.container{
      width: 100%;
      height: auto;
      display: flex;
@@ -27,9 +47,9 @@ h3 {
      justify-content: space-around;
      flex-flow: wrap;
      background-color: #d9ebdf;
-    }
+}
 
- .box {
+.box{
      width: 40%;
      height: 200px;
      box-sizing: border-box;
@@ -41,12 +61,12 @@ h3 {
      text-align: center;
      font-family: Arial, Helvetica, sans-serif;
      font-weight: bold;
- }
+}
 
- .box:hover {
+.box:hover{
      border: 2px solid #1ddc58;
      background-color: #5fdb86;
- }
+}
 
 #cardicon {
     width: auto;
@@ -59,31 +79,17 @@ h3 {
     background-color: black;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  
-  .column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-  }
-
-  .intro {
+.intro {
     text-align: center;  
     padding-left: 450px;
     padding-right: 450px;
-  }
+}
 
- .grid-item1 {
+.grid-item1 {
     margin-top: 4vw;
     background-color: #373d4b;
     color: white;
- }
+}
 
  .grid-item1 h3 {
     color: white;
@@ -99,9 +105,9 @@ h3 {
     h3 {
         font-size: 30px;
     }
-     .box{
+    .box{
         width: 40%;
-     }
+    }
  }
 
  @media screen and (max-width:999px) {
